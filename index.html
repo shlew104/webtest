@@ -1,85 +1,818 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="ko">
 <head>
-  <title>웅미 홈페이지</title>
-  <style>
-    /* 스타일링을 위한 CSS 코드 */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-    
-    nav {
-      margin-top: 10px;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    
-    nav li {
-      display: inline-block;
-    }
-    
-    nav a {
-      color: #fff;
-      display: block;
-      padding: 10px 20px;
-      text-decoration: none;
-    }
-    
-    section {
-      padding: 50px;
-      background-color: #f2f2f2;
-    }
-    
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:type" content="website">
+<meta property="og:title" content="팔팔">
+<meta property="og:description" content="팔팔 공식 웹사이트">
+<meta property="og:image" content="https://www.woomi.co.kr/resources/kr-mo/images/common/og_img.jpg">
+<meta property="og:url" content="https://www.woomi.co.kr">
+<link rel="shortcut icon" type="image/x-icon" href="/resources/kr-mo/images/common/favicon.ico">
+<link rel="stylesheet" href="/resources/kr-mo/css/plugin/swiper.min.css">
+<link rel="stylesheet" href="/resources/kr-mo/css/plugin/animate.css">
+<link rel="stylesheet" href="/resources/kr-mo/css/style.css">
+
+
+
+
+<script>
+
+	function exDownload(c_file_table_id,c_file_table,c_file_type){
+		window.location.href='/kr-mo/common/fileDownload.do?file_table_id='+c_file_table_id+'&file_table='+c_file_table+'&file_type='+c_file_type;
+	}
+
+	function Go(_url){
+		window.location.href=_url;
+	}
+
+	function getTxt(_data){
+		if(_data && _data != 'null'){
+			return _data;
+		}else{
+			return '';
+		}
+	}
+
+</script>
+<meta name="keywords" content="팔팔건설, 팔팔, 88, 종합건설, 건설, 종합부동산회사">
+    <meta name="description" content="팔팔 공식 웹사이트">
+    <title>팔팔</title>
 </head>
+
 <body>
-  <header>
-    <h1>웅미 홈페이지</h1>
-    <nav>
-      <ul>
-        <li><a href="#section1">서비스 소개</a></li>
-        <li><a href="#section2">포트폴리오</a></li>
-        <li><a href="#section3">문의하기</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- wrap -->
+    <div id="wrap" class="wrap main">
+        <!-- header -->
+<header id="header" class="header">
+    <div class="header_inner">
+        <h1>
+            <a href="/kr-mo/index.do">logo</a>
+        </h1>
+        <a href="javascript:void(0);" id="btnOpen" class="btn_menu_open">
+            <span class="ir">메뉴 열기</span>
+        </a>
+    </div>
 
-  <section id="section1">
-    <h2>서비스 소개</h2>
-    <p>웅미는 다양한 디자인과 개발 서비스를 제공하는 회사입니다. 고품질의 웹사이트 제작, UI/UX 디자인, 앱 개발, 온라인 마케팅 등을 전문적으로 진행합니다.</p>
-  </section>
+    <div id="gnbDim" class="gnb_dim"></div>
+    <!-- gnb_all -->
+    <div class="gnb_all">
+        <div class="gnb_util">
+            <div class="lang_wrap">
+                <a href="/kr-mo/index.do" class="lang on"><span>KOR</span></a>
+                <!-- <a href="/en-mo/index.do" class="lang eng"><span>ENG</span></a> -->
+            </div>
+            <a href="javascript:void(0);" id="btnClose" class="btn_menu_close">
+                <span class="ir">메뉴 닫기</span>
+            </a>
+        </div>
+        <div class="gnb_scroll">
+            <div class="gnb_wrap">
+                <ul id="gnb" class="gnb">
+                    <li class="depth1">
+                        <a href="javascript:void(0);">우미소개</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="/kr-mo/company/ceo.do">CEO 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/company/value.do">기업가치관</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/company/history.do">기업연혁</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="/kr-mo/company/organization.do">조직도</a>
+                                </li> -->
+                                <li>
+                                    <a href="/kr-mo/company/location.do">오시는 길</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="/kr-mo/company/museum.do">역사관</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth1">
+                        <a href="javascript:void(0);">사업소개</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="/kr-mo/business/masterpiece/naerincheon_rest_area.do">마스터피스</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/business/house.do">주택사업</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/business/building.do">건축사업</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/business/investment.do">투자사업</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/business/civil.do">토목사업</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/business/other.do">기타사업</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth1">
+                        <a href="javascript:void(0);">지속가능경영</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="/kr-mo/management/ethics.do">기업윤리</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/management/quality.do">품질경영</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/management/knowledge.do">지식경영</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/management/safety.do">안전경영</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/management/contribute.do">사회공헌</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth1">
+                        <a href="javascript:void(0);">홍보센터</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="/kr-mo/pr/newsroom/list.do">뉴스룸</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/pr/ci.do">CI/BI</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/pr/pr-room.do">홍보자료</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/pr/sns.do">소셜채널</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth1">
+                        <a href="javascript:void(0);">채용정보</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="/kr-mo/recruit/info.do">채용 안내</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/recruit/talented.do">인재상</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/recruit/interview.do">우미 人터뷰</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="depth1">
+                        <a href="javascript:void(0);">고객센터</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="/kr-mo/customer/support.do">고객지원</a>
+                                </li>
+                                <li>
+                                    <a href="/kr-mo/customer/report.do">사이버신문고</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="banner">
+                    <a href="javascript:void(0);" class="banner_btn woomi_brief_btn"><p>WOOMI<br>BRIEF</p></a>
+                    <a href="https://www.lynn.co.kr/koMo/index.do" target="_blank" title="새 창 열림" class="banner_btn lynn_btn">
+                        <p>
+                            <img src="/resources/kr-mo/images/common/lynn_txt.png" alt="lynn">
+                            <span>바로가기</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gnb_all -->
+</header>
+<!-- //header --><!-- container -->
+        <div class="container">
+            <div class="swiper-container visualslide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/resources/kr-mo/images/main/visual01.jpg" alt="메인비주얼이미지" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resources/kr-mo/images/main/visual02.jpg" alt="메인비주얼이미지" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/resources/kr-mo/images/main/visual03.jpg" alt="메인비주얼이미지" />
+                    </div>
+                </div>
+                <div class="visualtxt">
+                    <h2>
+                        선도적인<br />
+                        일류 종합부동산 회사
+                    </h2>
+                    <p>PREMIER SPACE & VALUE CREATOR</p>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="sec sec1">
+                <div class="business_slide_wrap">
+                    <div class="swiper-pagination"></div>
+                    <div class="business_slide swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="slide1 swiper-slide custom_active">
+                                <img src="/resources/kr-mo/images/main/business_house_img.jpg" alt="주택사업 이미지" />
+                            </div>
+                            <div class="slide2 swiper-slide">
+                                <img src="/resources/kr-mo/images/main/business_building_img.jpg" alt="건축사업 이미지" />
+                            </div>
+                            <div class="slide5 swiper-slide">
+                                <img src="/resources/kr-mo/images/main/business_investment_img.jpg" alt="투자사업 이미지" />
+                            </div>
+                            <div class="slide3 swiper-slide">
+                                <img src="/resources/kr-mo/images/main/business_civil_img.jpg" alt="토목사업 이미지" />
+                            </div>
+                            <div class="slide4 swiper-slide">
+                                <img src="/resources/kr-mo/images/main/business_other_img.jpg" alt="기타사업 이미지" />
+                            </div>
+                        </div>
+                        <ul id="txtList" class="txt_wrap_list">
+                            <li class="txt_wrap on">
+                                <h3>주택사업</h3>
+                                <div class="btn_wrap">
+                                    <a href="/kr-mo/business/house.do" class="btn white" target="_self" title="바로가기">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="txt_wrap">
+                                <h3>건축사업</h3>
+                                <div class="btn_wrap">
+                                    <a href="/kr-mo/business/building.do" class="btn white" target="_self" title="바로가기">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="txt_wrap">
+                                <h3>투자사업</h3>
+                                <div class="btn_wrap">
+                                    <a href="/kr-mo/business/investment.do" class="btn white" target="_self" title="바로가기">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="txt_wrap">
+                                <h3>토목사업</h3>
+                                <div class="btn_wrap">
+                                    <a href="/kr-mo/business/civil.do" class="btn white" target="_self" title="바로가기">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="txt_wrap">
+                                <h3>기타사업</h3>
+                                <div class="btn_wrap">
+                                    <a href="/kr-mo/business/other.do" class="btn white" target="_self" title="바로가기">자세히보기</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sec sec2">
+                <div class="common_top_txt">
+                    <h3>MASTERPIECE</h3>
+                    <p>
+                        새로운 걸작을 만들기 위해 정성과 노력을 다합니다.<br />
+                        공간의 가치와 본질에 답하며, 혁신을 지어낸<br />
+                        우미의 마스터피스를 소개합니다.
+                    </p>
+                </div>
+                <div class="master_slide swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/kr-mo/business/masterpiece/naerincheon_rest_area.do" target="_self" title="바로가기">
+                                <img src="/resources/kr-mo/images/main/master_img01.jpg" alt="동홍천 - 양양간 내린천 휴게소 이미지" />
+                                <div class="txt_box">
+                                    <span>01</span>
+                                    <h5>동홍천 - 양양간 내린천 휴게소</h5>
+                                    <p>
+                                        자연을 보존하는 <br />
+                                        국내 최초 고속도로 위의 휴게 공간
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/kr-mo/business/masterpiece/dongtan_lynn_straus.do" target="_self" title="바로가기">
+                                <img src="/resources/kr-mo/images/main/master_img02.jpg" alt="동탄 린 스트라우스 더레이크 이미지" />
+                                <div class="txt_box">
+                                    <span>02</span>
+                                    <h5>동탄 린 스트라우스 더레이크</h5>
+                                    <p>
+                                        상업시설 레이크꼬모와 <br />
+                                        호수를 품은 동탄의 프리미엄 단지
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/kr-mo/business/masterpiece/highway.do" target="_self" title="바로가기">
+                                <img src="/resources/kr-mo/images/main/master_img03.jpg" alt="고현~하동IC 1공구 국도건설공사 이미지" />
+                                <div class="txt_box">
+                                    <span>03</span>
+                                    <h5>고현~하동IC 1공구 국도건설공사</h5>
+                                    <p>
+                                        국도의 원활한<br />
+                                        교통을 위한 도로 확장
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/kr-mo/business/masterpiece/lakecomo.do" target="_self" title="바로가기">
+                                <img src="/resources/kr-mo/images/main/master_img04.jpg" alt="레이크꼬모 동탄 이미지" />
+                                <div class="txt_box">
+                                    <span>04</span>
+                                    <h5>레이크꼬모 동탄</h5>
+                                    <p>
+                                        라이프스타일 파크<br />
+                                        레이크꼬모
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/kr-mo/business/masterpiece/newv.do" target="_self" title="바로가기">
+                                <img src="/resources/kr-mo/images/main/master_img05.jpg" alt="광교 우미 뉴브 이미지" />
+                                <div class="txt_box">
+                                    <span>05</span>
+                                    <h5>광교 우미 뉴브</h5>
+                                    <p>
+                                        광교 최대 수준의<br />
+                                        지식산업센터
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec sec4">
+                <div class="sec_inner">
+                    <div class="type01">
+                        <div class="common_top_txt">
+                            <h3>PRINCIPLE</h3>
+                            <p>
+                                고객의 꿈과 행복을 위해<br />
+                                더 나은 공간의 가치를 창조합니다.
+                            </p>
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="/kr-mo/company/value.do" target="_self" title="바로가기" class="btn white">기업가치관</a>
+                        </div>
+                        <div class="circle_motion_wrap">
+                            <img src="/resources/kr-mo/images/main/circle.png" alt="이미지" />
+                        </div>
+                        <!-- 통이미지로 작업 아닌 경우
+                        <div class="circle_motion_wrap">
+                            <div class="circle_item circle_top">
+                                <span class="ico"></span>
+                                <p class="txt">마음을 얻는<span>신뢰</span></p>
+                            </div>
+                            <div class="circle_item circle_left">
+                                <span class="ico"></span>
+                                <p class="txt">미래를 여는<span>학습</span></p>
+                            </div>
+                            <div class="circle_item circle_right">
+                                <span class="ico"></span>
+                                <p class="txt">최고를 향한<span>도전</span></p>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <div class="type02">
+                        <div class="common_top_txt">
+                            <h3>WOOMI PEOPLE</h3>
+                            <p>현장에서 들려주는 생생한 직무 스토리</p>
+                        </div>
+                        <div class="people_slide_wrap">
+                            <div class="people_slide swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide1">
+                                        <a href="/kr-mo/recruit/interview.do"  target="_self" title="바로가기">
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    성공적인 투자로 비즈니스<br>시너지를 창출합니다
+                                                </p>
+                                                <span class="name">투자사업팀 박인철 대리</span>
+                                                <span class="more">
+                                                    <img src="/resources/kr-mo/images/main/people_more.png" alt="더보기 이미지" />
+                                                </span>
+                                            </div>
+                                            <img class="img" src="/resources/kr-mo/images/main/people_img_01.png" alt="박인철 대리 이미지" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide2">
+                                        <a href="/kr-mo/recruit/interview.do" target="_self" title="바로가기">
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    효율적인 협업과 건축의<br>기획을 담당합니다
+                                                </p>
+                                                <span class="name">외주관리팀 고태호 대리</span>
+                                                <span class="more">
+                                                    <img src="/resources/kr-mo/images/main/people_more.png" alt="더보기 이미지" />
+                                                </span>
+                                            </div>
+                                            <img class="img" src="/resources/kr-mo/images/main/people_img_02.png" alt="고태호 대리 이미지" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide3">
+                                        <a href="/kr-mo/recruit/interview.do"  target="_self" title="바로가기">
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    안전을 위해 재해분석<br>및 현장 점검을 합니다
+                                                </p>
+                                                <span class="name">안전보건운영팀 이승규 주임</span>
+                                                <span class="more">
+                                                    <img src="/resources/kr-mo/images/main/people_more.png" alt="더보기 이미지" />
+                                                </span>
+                                            </div>
+                                            <img class="img" src="/resources/kr-mo/images/main/people_img_03.png" alt="이승규 주임 이미지" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide4">
+                                        <a href="/kr-mo/recruit/interview.do" target="_self" title="바로가기">
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    자산 운영 및 관리를 통하여<br>수익률 개선을 추구합니다
+                                                </p>
+                                                <span class="name">자산운영팀 이아랑 대리</span>
+                                                <span class="more">
+                                                    <img src="/resources/kr-mo/images/main/people_more.png" alt="더보기 이미지" />
+                                                </span>
+                                            </div>
+                                            <img class="img" src="/resources/kr-mo/images/main/people_img_04.png" alt="이아랑 대리 이미지" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide5">
+                                        <a href="/kr-mo/recruit/interview.do" target="_self" title="바로가기">
+                                            <div class="txt_wrap">
+                                                <p class="txt">
+                                                    상품의 인테리어를 관리해<br />
+                                                    공간의 가치를 높입니다
+                                                </p>
+                                                <span class="name">상품개발팀 이인혜 대리</span>
+                                                <span class="more">
+                                                    <img src="/resources/kr-mo/images/main/people_more.png" alt="더보기 이미지" />
+                                                </span>
+                                            </div>
+                                            <img class="img" src="/resources/kr-mo/images/main/people_img_05.png" alt="이인혜 대리 이미지" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec sec5">
+                <div class="sec_inner">
+                    <div class="top_box">
+                        <div class="common_top_txt">
+                            <h3>WHAT’S NEW</h3>
+                            <p>새로운 소식</p>
+                        </div>
+                        <div class="sns_tab_wrap">
+                            <ul id="snsTabList" class="sns_tab_list left">
+                                <li class="left active" data-url="/kr-mo/pr/newsroom/list.do">
+                                    <a href="javascript:void(0);">뉴스룸</a>
+                                </li>
+                                <li class="right" data-url="/kr-mo/pr/sns.do">
+                                    <a href="javascript:void(0);">소셜채널</a>
+                                </li>
+                            </ul>
+                            <a href="/kr-mo/pr/newsroom/list.do" id="snsTabMore" class="moreBtn">더보기</a>
+                        </div>
+                    </div>
+                    <div class="cont_area">
+                        <div class="cont_box on">
+                            <ul class="list">
+								<li>
+	                                    <a href="https://www.dnews.co.kr/uhtml/view.jsp?idxno=202306121003261500795" target='_blank' title="바로가기">
+                                            <!-- [D]: 23.02.23 뉴스룸 수정 -->
+                                            <span class="flag">대한경제</span>
+                                            <!-- //[D]: 23.02.23 뉴스룸 수정 -->    
+		                                    <p class="tit">우미희망재단, 전몰·순직군경 가족 위한 캠프 열어</p>
+	                                        <p class="data">2023.06.12</p>
+	                                    </a>
+	                                </li>
+								<li>
+	                                    <a href="https://n.news.naver.com/mnews/article/020/0003497421?sid=101" target='_blank' title="바로가기">
+                                            <!-- [D]: 23.02.23 뉴스룸 수정 -->
+                                            <span class="flag">동아일보</span>
+                                            <!-- //[D]: 23.02.23 뉴스룸 수정 -->    
+		                                    <p class="tit">우미희망재단, 가족돌봄청년 지원 사업 ‘우미 희망케어’ 추진</p>
+	                                        <p class="data">2023.05.15</p>
+	                                    </a>
+	                                </li>
+								<li>
+	                                    <a href="https://www.mk.co.kr/news/business/10714115" target='_blank' title="바로가기">
+                                            <!-- [D]: 23.02.23 뉴스룸 수정 -->
+                                            <span class="flag">매일경제</span>
+                                            <!-- //[D]: 23.02.23 뉴스룸 수정 -->    
+		                                    <p class="tit">우미, 핍스월 ‘ESV펀드’ 참여…“프롭테크 기업 해외진출 지원”</p>
+	                                        <p class="data">2023.04.17</p>
+	                                    </a>
+	                                </li>
+								<li>
+	                                    <a href="https://www.donga.com/news/Economy/article/all/20230328/118551769/2" target='_blank' title="바로가기">
+                                            <!-- [D]: 23.02.23 뉴스룸 수정 -->
+                                            <span class="flag">동아경제</span>
+                                            <!-- //[D]: 23.02.23 뉴스룸 수정 -->    
+		                                    <p class="tit">우미건설, 청주 지북 공공지원 민간임대 주택 수주</p>
+	                                        <p class="data">2023.03.28</p>
+	                                    </a>
+	                                </li>
+								<!-- <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="cont_box">
+                            <ul class="list">
+								<li>
+                                    <a href="https://youtu.be/zwXQE_2yiGM" target="_blank" title="바로가기">
+                                     	<p class="tit">[입주 단지 Sketch] 위례 우미린</p>
+	                                    <p class="data">2023.06.09</p>
+                                    </a>
+                                </li>
+								<li>
+                                    <a href="https://youtu.be/AxB-Z_79ii4" target="_blank" title="바로가기">
+                                     	<p class="tit">[입주 단지 Sketch] 완주 삼봉지구 우미린 에코포레</p>
+	                                    <p class="data">2023.06.08</p>
+                                    </a>
+                                </li>
+								<li>
+                                    <a href="https://www.instagram.com/p/Cs-0wbrSIoN/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg==" target="_blank" title="바로가기">
+                                     	<p class="tit">이천 중리 우미 린. 트리쉐이드 팔로우 & 관심고객등록 이벤트</p>
+	                                    <p class="data">2023.06.02</p>
+                                    </a>
+                                </li>
+								<li>
+                                    <a href="https://blog.naver.com/lynnblog/223117688508" target="_blank" title="바로가기">
+                                     	<p class="tit">시간을 품은 공간 <아파트 이야기> 6월 캘린더</p>
+	                                    <p class="data">2023.06.01</p>
+                                    </a>
+                                </li>
+								<!-- <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2021년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="tit">'2020년 베스트 아파트 브랜드' 우미건설 '우미린’ 9위</p>
+                                        <p class="data">2021.02.23</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="customer_list">
+                    <li class="online">
+                        <a href="https://www.lynn.co.kr/koMo/mylynn/inquiry.do" target="_blank" title="새 창 열림">
+                            <span>온라인문의</span>
+                        </a>
+                    </li>
+                    <li class="as">
+                        <a href="https://www.lynn.co.kr/koMo/customer/as.do" target="_blank" title="새 창 열림">
+                            <span>A/S문의</span>
+                        </a>
+                    </li>
+                    <li class="recruit">
+                        <a href="https://woomi.recruiter.co.kr/bbs/appsite/qna/write" target="_blank" title="새 창 열림">
+                            <span>채용문의</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+<footer id="footer" class="footer">
+    <div class="sec_inner">
+        <div class="btn_box">
+            <div class="brief">
+                <a href="javascript:;" class="woomi_brief_btn">WOOMI BRIEF<img src="/resources/kr-mo/images/common/brief_more_btn.png" alt="플러스 이미지" /></a>
+            </div>
+            <a href="javascript:;" id="topBtn" class="top_btn">TOP<img src="/resources/kr-mo/images/common/top_btn.png" alt="플러스 이미지" /></a>
+        </div>
+        <div class="top_box">
+            <p class="logo">
+                <img src="/resources/kr-mo/images/common/footer_logo.png" alt="logo">
+            </p>
+            <div id="famSite" class="fam_site">
+                <p>패밀리사이트</p>
+                <div class="fam_site_box">
+                    <a href="javascript:;" class="fam_site_close">
+                        <img src="/resources/kr-mo/images/common/site_more.png" alt="닫기버튼" />
+                    </a>
+                    <ul class="fam_list">
+                        <li>
+                            <a href="https://www.lynn.co.kr/koMo/index.do" target="_blank" title="새 창 열림">우미린</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lakecomo.co.kr/" target="_blank" title="새 창 열림">레이크꼬모</a>
+                        </li>
+                        <li>
+                            <a href="https://woomi.recruiter.co.kr/appsite/company/index" target="_blank" title="새 창 열림">우미채용</a>
+                        </li>
+                        <li>
+                            <a href="https://hub.smartlynn.co.kr/hub" target="_blank" title="새 창 열림">스마트린</a>
+                        </li>
+                        <li>
+                            <a href="https://www.keumpa.or.kr/main.asp" target="_blank" title="새 창 열림">우미희망재단</a>
+                        </li>
+                        <li>
+                            <a href="https://cleanwoomi.co.kr/main/main.asp" target="_blank" title="새 창 열림">사이버신문고</a>
+                        </li>
+                        <li>
+                            <a href="https://b2b.woomi.co.kr/login" target="_blank" title="새 창 열림">협력업체</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_info">
+            <address>
+                06292 서울시 강남구 언주로 30길 39 린스퀘어(도곡동 467-14) 대표전화 1588-9707
+            </address>
+            <p class="copyright">COPYRIGHT (C) 2021 WOOMI Co.,Ltd. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="sns_wrap">
+            <a class="youtube_link" href="https://www.youtube.com/channel/UCzcVoIAQMH25GRyBmbA81wQ" target="_blank" title="새 창 열림"><img src="/resources/kr-mo/images/common/youtube_icon.png" alt="유튜브" /></a>
+            <a class="blog_link" href="https://blog.naver.com/lynnblog" target="_blank" title="새 창 열림"><img src="/resources/kr-mo/images/common/blog_icon.png" alt="블로그" /></a>
+            <a class="instar_link" href="https://www.instagram.com/woomi_lynn/" target="_blank" title="새 창 열림"><img src="/resources/kr-mo/images/common/instar_icon.png" alt="인스타" /></a>
+            <a class="kakao_link" href="http://pf.kakao.com/_WXxiRs" target="_blank" title="새 창 열림"><img src="/resources/kr-mo/images/common/kakao_icon.png" alt="카카오" /></a>
+        </div>
+    </div>
+</footer>
+<!-- //footer --><div id="woomiBriefPopup" class="woomi_brief_pop">
+    <!-- pop_wrap -->
+    <div class="pop_wrap">
+        <div class="pop_cont">
+            <div class="woomi_brief_slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="slide1 swiper-slide">
+                        <img src="/resources/kr-mo/images/woomibrief/bg_01.jpg" alt="회사소개" />
+                        <p class="ir">회사소개</p>
+                    </div>
+                    <div class="slide2 swiper-slide">
+                        <img src="/resources/kr-mo/images/woomibrief/bg_02.jpg" alt="기업철학" />
+                        <p class="ir">기업철학</p>
+                    </div>
+                    <div class="slide3 swiper-slide">
+                        <img src="/resources/kr-mo/images/woomibrief/bg_03.jpg" alt="기업철학" />
+                        <p class="ir">기업철학</p>
+                    </div>
+                    <div class="slide4 swiper-slide">
+                        <p class="ir">사업영역</p>
+                        <img usemap="#businessMap" src="/resources/kr-mo/images/woomibrief/bg_04.jpg" alt="사업영역" />
+                        <map id="businessMap" name="businessMap">
+                            <area shape="rect" alt="주택사업 실적보기" title="새창 열림" coords="44,305,197,523" href="/kr-mo/business/house/portfolio-own.do" target="_blank">
+                            <area shape="rect" alt="건축사업 실적보기" title="새창 열림" coords="230,302,393,522" href="/kr-mo/business/building/portfolio-business.do" target="_blank">
+                            <area shape="rect" alt="투자사업 실적보기" title="새창 열림" coords="426,304,585,522" href="/kr-mo/business/investment/portfolio-proptech.do" target="_blank">
+                            <area shape="rect" alt="토목사업 실적보기" title="새창 열림" coords="135,634,294,854" href="/kr-mo/business/civil/portfolio-road.do" target="_blank">
+                            <area shape="rect" alt="기타사업 실적보기" title="새창 열림" coords="336,636,491,855" href="/kr-mo/business/other/portfolio-EM.do" target="_blank">
+                        </map>
+                    </div>
+                    <div class="slide5 swiper-slide">
+                        <img src="/resources/kr-mo/images/woomibrief/bg_05.jpg" alt="파트너사" />
+                        <p class="ir">파트너사</p>
+                    </div>
+                    <div class="slide6 swiper-slide">
+                        <img src="/resources/kr-mo/images/woomibrief/bg_06.jpg" alt="시공능력" />
+                        <p class="ir">시공능력</p>
+                    </div>
+                    <div class="slide7 swiper-slide">
+                        <img src="/resources/kr-mo/images/woomibrief/bg_07.jpg" alt="시공능력" />
+                        <p class="ir">시공능력</p>
+                    </div>
+                </div>
 
-  <section id="section2">
-    <h2>포트폴리오</h2>
-    <p>웅미는 다양한 프로젝트를 수행하고 있으며, 우리의 작업물을 확인하세요. 고객들의 요구에 맞춰 맞춤형 솔루션을 제공하고 있습니다.</p>
-  </section>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
 
-  <section id="section3">
-    <h2>문의하기</h2>
-    <p>궁금한 점이 있으시면 언제든지 문의해주세요. 웅미는 항상 최선을 다해 도움을 드릴 준비가 되어 있습니다.</p>
-  </section>
+                <div class="info_wrap">
+                    <div class="txt"><p>회사소개</p></div>
+                </div>
+            </div>
+        </div>
+        <p class="btn_pop">
+            <a href="javascript:void(0)" class="btn_close"><span class="ir">닫기</span></a>
+        </p>
+    </div>
+    <!-- //pop_wrap -->
+</div></div>
+    <!-- //wrap -->
+    <!-- mainPopup -->
+    <!-- //mainPopup -->
+    <!-- Global site tag (gtag.js) - Google Analytics 최상단 위치 -->
+<!-- 국문 우미건설 PC/Mobile -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213353713-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <footer>
-    <p>웅미 홈페이지에 방문해 주셔서 감사합니다.</p>
-  </footer>
+  gtag('config', 'UA-213353713-3');
+</script>
+
+<!-- 국문 우미건설 Mobile -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213353713-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213353713-2');
+</script>
+
+
+<!-- 국문 우미건설 PC/Mobile - GA4 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRGCVWDL4S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NRGCVWDL4S');
+</script>
+
+<!-- 국문 우미건설 Mobile - GA4 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3C0RC7EX2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P3C0RC7EX2');
+</script><!-- //Global site tag (gtag.js) - Google Analytics 최상단 위치 -->
+<script src="/resources/kr-mo/js/plugin/jquery-3.5.1.min.js"></script>
+<script src="/resources/kr-mo/js/plugin/swiper-4.5.1.min.js"></script>
+<script src="/resources/kr-mo/js/plugin/jquery.rwdImageMaps.min.js"></script>
+<script src="/resources/kr-mo/js/common.js"></script>
+<script src="/resources/kr-mo/js/board.js"></script>
+<script src="/resources/kr-mo/js/plugin/ScrollMagic.min.js"></script>
+    <script src="/resources/kr-mo/js/plugin/TweenMax.min.js"></script>
+    <script src="/resources/kr-mo/js/plugin/animation.gsap.min.js"></script>
+    <script src="/resources/kr-mo/js/main.js"></script>
 </body>
-</html>
+                          </html>
